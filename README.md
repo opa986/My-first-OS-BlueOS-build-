@@ -1,18 +1,18 @@
-# 💙 blueOS
+# BlueOS
 
 > O sistema operacional mais leve do universo. Um OS bare-metal em x86 32-bit construído do zero em Assembly (NASM) e C puro, sem dependências de Linux ou Windows.
 
 ---
 
-## 🚀 Sobre o Projeto
+##  Sobre o Projeto
 
-O **blueOS** é um projeto de sistema operacional focado em baixo nível, eficiência extrema e controle absoluto do hardware. Ele roda direto no metal (*bare-metal*), comunicando-se diretamente com a memória de vídeo VGA (`0xB8000`) e com as controladoras do sistema.
+O **BlueOS** é um projeto de sistema operacional focado em baixo nível, eficiência extrema e controle absoluto do hardware. Ele roda direto no metal (*bare-metal*), comunicando-se diretamente com a memória de vídeo VGA (`0xB8000`) e com as controladoras do sistema.
 
 Com um kernel extremamente otimizado, o sistema inteiro e a imagem `.iso` bootável pesam cerca de **1 MB**, contendo mais de 160 comandos de terminal, suíte GDI de efeitos visuais e gerenciamento de crash real com reset físico.
 
 ---
 
-## ✨ Principais Funcionalidades
+##  Principais Funcionalidades
 
 * **Arquitetura x86 Bare-Metal:** Inicialização via Multiboot spec (`boot.s`) com kernel freestanding em C.
 * **Interface VGA Direta:** Renderização ultrarrápida direto na memória de vídeo sem drivers pesados.
@@ -24,7 +24,7 @@ Com um kernel extremamente otimizado, o sistema inteiro e a imagem `.iso` bootá
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * **Assembly x86 (NASM):** Bootloader e configuração inicial em modo protegido de 32-bits.
 * **C (GCC):** Lógica do kernel, shell, gerenciamento de vídeo e interpretador de comandos (`-ffreestanding -m32`).
@@ -34,7 +34,7 @@ Com um kernel extremamente otimizado, o sistema inteiro e a imagem `.iso` bootá
 
 ---
 
-## 📦 Como Compilar e Rodar
+##  Como Compilar e Rodar
 
 Certifique-se de ter as ferramentas necessárias instaladas no seu ambiente Linux (GCC, NASM, QEMU, Xorriso e GRUB):
 
